@@ -1,9 +1,12 @@
-import React from 'react'
-
-const Button = () => {
+const Button = ({ styles }) => {
   return (
-    <div>Button</div>
-  )
-}
+    <button
+      className={`cursor-pointer py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] outline-none ${styles} rounded-[10px]`}
+      type="button"
+    >
+      Get Started
+    </button>
+  );
+};
 
-export default Button
+export default Button;
